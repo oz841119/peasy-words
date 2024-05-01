@@ -9,10 +9,12 @@ export default function RootLayout({
   return (
     <div className="flex">
       <Side></Side>
-      <main>
+      <div>
         <DashboardHeader></DashboardHeader>
-        { children }
-      </main>
+        <main className="p-5 bg-slate-700">
+          { children }
+        </main>
+      </div>
     </div>
   );
 }
